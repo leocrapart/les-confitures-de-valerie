@@ -9,8 +9,10 @@
     <div class="font-semibold text-2xl">Les confitures de Valérie</div>
   </a>
   <div class="flex justify-end items-center space-x-12 font-semibold">
-    <!-- Produits -->
-    <a href="/" class="flex hover:text-gray-700"> Produits </a>
+    <!-- Confitures -->
+    <a href="/" class="flex hover:text-gray-700"> Confitures </a>
+    <!-- Sucreries -->
+    <a href="/sucreries" class="flex hover:text-gray-700"> Sucreries </a>
     <!-- Contact -->
     <a href="/contact" class="flex hover:text-gray-700">
       <svg

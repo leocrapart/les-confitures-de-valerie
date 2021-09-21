@@ -22,7 +22,14 @@
 <!-- grande mosaique -->
 <div class="px-10 py-10 flex flex-col justify-center">
   <!-- summer mosaique -->
-  <div class="font-semibold text-2xl">Les fruits de l'Eté</div>
+  <div>
+    <div
+      class="font-semibold text-2xl rounded bg-gray-200 px-4 py-2 inline-flex"
+    >
+      Les fruits de l'Eté
+    </div>
+  </div>
+
   <div class="flex flex-wrap ">
     {#each summerProducts as p}
       <ProductCard
@@ -34,7 +41,13 @@
     {/each}
   </div>
   <!-- autumn mosaique -->
-  <div class="font-semibold text-2xl mt-8">Les fruits de l'Automne</div>
+  <div>
+    <div
+      class="font-semibold text-2xl rounded bg-gray-200 px-4 py-2 inline-flex mt-8"
+    >
+      Les fruits de l'Automne
+    </div>
+  </div>
   <div class="flex flex-wrap ">
     {#each autumnProducts as p}
       <ProductCard
@@ -46,7 +59,13 @@
     {/each}
   </div>
   <!-- winter mosaique -->
-  <div class="font-semibold text-2xl mt-8">Les fruits de l'Hiver</div>
+  <div>
+    <div
+      class="font-semibold text-2xl rounded bg-gray-200 px-4 py-2 inline-flex mt-8"
+    >
+      Les fruits de l'Hiver
+    </div>
+  </div>
   <div class="flex flex-wrap ">
     {#each winterProducts as p}
       <ProductCard
@@ -58,7 +77,13 @@
     {/each}
   </div>
   <!-- spring mosaique -->
-  <div class="font-semibold text-2xl mt-8">Les fruits du Printemps</div>
+  <div>
+    <div
+      class="font-semibold text-2xl rounded bg-gray-200 px-4 py-2 inline-flex mt-8"
+    >
+      Les fruits du Printemps
+    </div>
+  </div>
   <div class="flex flex-wrap ">
     {#each springProducts as p}
       <ProductCard
