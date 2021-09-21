@@ -28,7 +28,8 @@
       <!-- ajouter au panier -->
       <div class="inline-flex">
         <div
-          class=" px-4 py-2 font-semibold rounded bg-gray-200 hover:cursor-pointer"
+          class=" px-4 py-2 font-semibold rounded bg-gray-200 hover:cursor-pointer
+                  hover:bg-gray-300 "
         >
           Ajouter au panier
         </div>
@@ -41,8 +42,8 @@
         <div>v Artisanale</div>
         <div>v Faite maison</div>
         <div>v cuite en bassine de cuivre</div>
-        <div>v Figues blanches direct producteur</div>
-        <div>v Figues blanches du Lot et Garonne</div>
+        <div>v {product.fruits} direct producteur</div>
+        <div>v {product.fruits} du Lot et Garonne</div>
         <div>
           <!-- idee camembert  -->
           <br />
