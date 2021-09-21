@@ -1,14 +1,78 @@
 <script>
+  import Mosaique from "../lib/Mosaique.svelte";
+
   import Banner from "../lib/Banner.svelte";
   import ProductCard from "$lib/ProductCard.svelte";
 
   import { data } from "../data.js";
+  import ProductsRow from "$lib/ProductsRow.svelte";
 
   const products = $data.products;
   const springProducts = products.filter((p) => p.season == "spring");
   const summerProducts = products.filter((p) => p.season == "summer");
   const autumnProducts = products.filter((p) => p.season == "autumn");
   const winterProducts = products.filter((p) => p.season == "winter");
+
+  function getProduct(id) {
+    const productsResult = products.filter((p) => id == p.url);
+    if (productsResult.length > 0) {
+      const product = productsResult[0];
+      return product;
+    } else {
+      return "";
+    }
+    return product;
+  }
+  function getProducts(idList) {
+    const productsResult = idList.map((id) => getProduct(id));
+    const products = productsResult.filter((p) => p != "");
+    return products;
+  }
+  const springProductsRow1 = getProducts([
+    "fraise",
+    "cerise",
+    "abricot",
+    "framboise",
+  ]);
+
+  const summerProductsRow1 = getProducts([
+    "nectarine",
+    "nectarine-blanche",
+    "nectarine-abricot",
+    "peche",
+    "peche-abricot",
+    "peche-blanche",
+  ]);
+  const summerProductsRow2 = getProducts([
+    "mirabelle",
+    "mirabelle-abricot",
+    "reine-claude",
+    "prune-d-ente",
+    "prune-d-ente-rhum",
+  ]);
+  const summerProductsRow3 = getProducts([
+    "figue-noire",
+    "figue-blanche",
+    "figue-vanille",
+  ]);
+  const autumnProductsRow1 = getProducts([
+    "coing",
+    "gelee-coing",
+    "poire",
+    "poire-vanille",
+  ]);
+  const autumnProductsRow2 = getProducts([
+    "melon",
+    "melon-vanille",
+    "tomate-verte",
+    "tomate-vanille",
+  ]);
+  const winterProductsRow1 = getProducts([
+    "pomme-cannelle",
+    "gelee-pomme",
+    "kiwi",
+    "kiwi-vanille",
+  ]);
 </script>
 
 <svelte:head>
@@ -21,77 +85,30 @@
 
 <!-- grande mosaique -->
 <div class="px-10 py-10 flex flex-col justify-center">
-  <!-- summer mosaique -->
-  <div>
-    <div
-      class="font-semibold text-2xl rounded bg-gray-200 px-4 py-2 inline-flex"
-    >
-      Les fruits de l'Eté
-    </div>
+  <div class="">
+    <Mosaique products={springProducts} title="Les Fruits du Printemps">
+      <ProductsRow products={springProductsRow1} />
+    </Mosaique>
   </div>
 
-  <div class="flex flex-wrap ">
-    {#each summerProducts as p}
-      <ProductCard
-        name={p.shortName}
-        url={p.url}
-        img_url={p.imgUrl}
-        price={p.price}
-      />
-    {/each}
+  <div class="mt-12">
+    <Mosaique products={summerProducts} title="Les Fruits de l'Eté">
+      <ProductsRow products={summerProductsRow1} />
+      <ProductsRow products={summerProductsRow2} />
+      <ProductsRow products={summerProductsRow3} />
+    </Mosaique>
   </div>
-  <!-- autumn mosaique -->
-  <div>
-    <div
-      class="font-semibold text-2xl rounded bg-gray-200 px-4 py-2 inline-flex mt-8"
-    >
-      Les fruits de l'Automne
-    </div>
+
+  <div class="mt-12">
+    <Mosaique products={autumnProducts} title="Les Fruits de l'Automne">
+      <ProductsRow products={autumnProductsRow1} />
+      <ProductsRow products={autumnProductsRow2} />
+    </Mosaique>
   </div>
-  <div class="flex flex-wrap ">
-    {#each autumnProducts as p}
-      <ProductCard
-        name={p.shortName}
-        url={p.url}
-        img_url={p.imgUrl}
-        price={p.price}
-      />
-    {/each}
-  </div>
-  <!-- winter mosaique -->
-  <div>
-    <div
-      class="font-semibold text-2xl rounded bg-gray-200 px-4 py-2 inline-flex mt-8"
-    >
-      Les fruits de l'Hiver
-    </div>
-  </div>
-  <div class="flex flex-wrap ">
-    {#each winterProducts as p}
-      <ProductCard
-        name={p.shortName}
-        url={p.url}
-        img_url={p.imgUrl}
-        price={p.price}
-      />
-    {/each}
-  </div>
-  <!-- spring mosaique -->
-  <div>
-    <div
-      class="font-semibold text-2xl rounded bg-gray-200 px-4 py-2 inline-flex mt-8"
-    >
-      Les fruits du Printemps
-    </div>
-  </div>
-  <div class="flex flex-wrap ">
-    {#each springProducts as p}
-      <ProductCard
-        name={p.shortName}
-        url={p.url}
-        img_url={p.imgUrl}
-        price={p.price}
-      />
-    {/each}
+
+  <div class="mt-12">
+    <Mosaique products={winterProducts} title="Les Fruits de l'Hiver">
+      <ProductsRow products={winterProductsRow1} />
+    </Mosaique>
   </div>
 </div>

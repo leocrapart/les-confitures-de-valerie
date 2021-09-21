@@ -59,7 +59,7 @@ export const data = readable({
     {
       fullName: "Confiture de fraise",
       shortName: "Fraise",
-      url: "frase",
+      url: "fraise",
       imgUrl: "confiture-fraise.jpeg",
       price: "5,50€",
       season: "spring",
@@ -114,7 +114,7 @@ export const data = readable({
     {
       fullName: "Confiture de pêche-abricot",
       shortName: "Pêche",
-      url: "peche",
+      url: "peche-abricot",
       imgUrl: "confiture-peche.jpeg",
       price: "5,50€",
       season: "summer",
