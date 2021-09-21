@@ -15,6 +15,10 @@
   let product = products.filter((product) => product.url == product_id)[0];
 </script>
 
+<svelte:head>
+  <title>{product.shortName}</title>
+</svelte:head>
+
 <div class="py-20 px-20">
   <div class="flex">
     <!-- image -->

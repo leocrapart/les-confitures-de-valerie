@@ -11,6 +11,10 @@
   const winterProducts = products.filter((p) => p.season == "winter");
 </script>
 
+<svelte:head>
+  <title>Les confitures de Valérie</title>
+</svelte:head>
+
 <div class="px-60 py-10">
   <Banner />
 </div>
