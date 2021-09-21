@@ -21,20 +21,8 @@
 
 <!-- grande mosaique -->
 <div class="px-10 py-10 flex flex-col justify-center">
-  <!-- spring mosaique -->
-  <div class="font-semibold text-2xl">Les fruits du Printemps</div>
-  <div class="flex flex-wrap ">
-    {#each springProducts as p}
-      <ProductCard
-        name={p.shortName}
-        url={p.url}
-        img_url={p.imgUrl}
-        price={p.price}
-      />
-    {/each}
-  </div>
   <!-- summer mosaique -->
-  <div class="font-semibold text-2xl mt-8">Les fruits de l'Eté</div>
+  <div class="font-semibold text-2xl">Les fruits de l'Eté</div>
   <div class="flex flex-wrap ">
     {#each summerProducts as p}
       <ProductCard
@@ -61,6 +49,18 @@
   <div class="font-semibold text-2xl mt-8">Les fruits de l'Hiver</div>
   <div class="flex flex-wrap ">
     {#each winterProducts as p}
+      <ProductCard
+        name={p.shortName}
+        url={p.url}
+        img_url={p.imgUrl}
+        price={p.price}
+      />
+    {/each}
+  </div>
+  <!-- spring mosaique -->
+  <div class="font-semibold text-2xl mt-8">Les fruits du Printemps</div>
+  <div class="flex flex-wrap ">
+    {#each springProducts as p}
       <ProductCard
         name={p.shortName}
         url={p.url}
