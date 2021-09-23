@@ -79,7 +79,14 @@
   <title>Les confitures de Valérie</title>
 </svelte:head>
 
-<div class="px-60 py-10">
+<!-- sm = a bit less than md +
+   md = mid screen+
+    lg = 66% +
+    xl = 75% screen +
+    2xl = 100%+
+-->
+
+<div class="p-10 xl:px-20 xl:py-10 ">
   <Banner />
 </div>
 
