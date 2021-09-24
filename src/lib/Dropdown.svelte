@@ -14,7 +14,7 @@
 
 <div class="flex flex-col space-y-1 text-left ">
   <div class="pt-2" />
-  <DropdownItem text="Confitures" href="">
+  <DropdownItem text="Confitures" href="/">
     <JamIcon2 />
   </DropdownItem>
 
