@@ -1,7 +1,7 @@
 <script>
   import Dropdown from "./Dropdown.svelte";
   import { fade } from "svelte/transition";
-  let dropdownActivated = true;
+  let dropdownActivated = false;
 </script>
 
 <div
