@@ -1,10 +1,9 @@
 <script>
-  import Mosaique from "$lib/Mosaique.svelte";
+  import Mosaique from "../../lib/Mosaique.svelte";
 
-  import Banner from "$lib/Banner.svelte";
-  import ProductCard from "$lib/ProductCard.svelte";
+  import Banner from "../../lib/Banner.svelte";
 
-  import { data } from "../data.js";
+  import { data } from "../../data.js";
   import ProductsRow from "$lib/ProductsRow.svelte";
 
   const products = $data.products;
