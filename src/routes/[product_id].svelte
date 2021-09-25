@@ -21,16 +21,28 @@
   <title>{product.shortName}</title>
 </svelte:head>
 
-<div class="py-20 px-20">
-  <div class="flex">
+<div class=" px-5 py-5 md:py-20 xl:px-20">
+  <div
+    class="flex flex-col
+              md:flex-row"
+  >
     <!-- image -->
-    <div class="w-1/3 ">
+    <div
+      class="w-full
+            sm:w-80
+            md:w-80 lg:w-80 xl:w-1/3 "
+    >
       <img src={product.imgUrl} alt="" class="rounded " />
     </div>
     <!-- a droite -->
-    <div class="flex flex-col px-10 space-y-5">
-      <div class="font-bold text-xl">{product.fullName}</div>
-      <div class="font-semibold text-lg">{product.price} TTC</div>
+    <div class="flex flex-col md:px-10 md:space-y-5 pt-5">
+      <div class="font-bold text-xl whitespace-nowrap">{product.fullName}</div>
+      <div
+        class="mb-5 font-semibold text-lg 
+               md:mb-0"
+      >
+        {product.price} TTC
+      </div>
       <!-- ajouter au panier -->
       <div class="inline-flex">
         <div
@@ -59,10 +71,10 @@
         <div>
           <!-- idee camembert  -->
           <br />
+          <div>350g</div>
           <div>60% de fruits frais direct producteur</div>
           <div>40% de sucre, jus de citron, extrait d'arôme de vanille</div>
           <br />
-          <div>350g</div>
         </div>
       </div>
     </div>
