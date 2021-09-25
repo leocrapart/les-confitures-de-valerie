@@ -10,7 +10,9 @@
 </script>
 
 <div>
-  <div class="font-semibold text-2xl rounded bg-gray-200 px-4 py-2 inline-flex">
+  <div
+    class="px-4 font-semibold text-2xl rounded bg-gray-200  py-2 inline-flex"
+  >
     {title}
   </div>
 </div>

@@ -90,7 +90,10 @@
 </div>
 
 <!-- grande mosaique -->
-<div class="px-10 py-10 flex flex-col justify-center">
+<div
+  class="px-2 py-10 flex flex-col justify-center
+         md:px-10 "
+>
   <div class="">
     <Mosaique products={springProducts} title="Les Fruits du Printemps">
       <ProductsRow products={springProductsRow1} />
