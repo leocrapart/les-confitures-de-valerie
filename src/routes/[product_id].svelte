@@ -35,7 +35,7 @@
       <img src={product.imgUrl} alt="" class="rounded " />
     </div>
     <!-- a droite -->
-    <div class="flex flex-col md:px-10 md:space-y-5 pt-5">
+    <div class="flex flex-col md:px-10 md:space-y-5 pt-5 md:pt-0">
       <div class="font-bold text-xl whitespace-nowrap">{product.fullName}</div>
       <div
         class="mb-5 font-semibold text-lg 
