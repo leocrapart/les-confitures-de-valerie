@@ -3,9 +3,7 @@
             md:flex-row md:px-20 md:space-x-16"
 >
   <div>
-    <div class="font-semibold text-2xl whitespace-nowrap">
-      Valérie Déméautis
-    </div>
+    <div class="font-semibold text-2xl">Valérie Déméautis</div>
     <div class="pt-4">Confiturier Direct Producteur</div>
     <div>4ème aux Championnats du Monde 2021</div>
     <br />
