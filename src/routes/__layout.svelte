@@ -13,6 +13,7 @@
 <svelte:window bind:innerWidth />
 
 <div>
+  <!-- idee: dropdown qui descend en se dépliant touk touk touk -->
   {#if innerWidth >= mdBreakpoint}
     <DesktopNavbar />
   {:else}

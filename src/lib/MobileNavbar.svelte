@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="flex flex-col justify-center text-center py-4 md:grid md:grid-cols-2 bg-red-500 px-2 text-gray-50"
+  class="flex flex-col justify-center text-center py-4 md:grid md:grid-cols-2 bg-red-600 px-2 text-gray-50"
 >
   <!-- Title -->
   <a href="/" class="py-4">

@@ -8,7 +8,7 @@
   import JamIcon from "./JamIcon.svelte";
 </script>
 
-<div class="grid grid-cols-2 bg-red-500 py-4 px-8 text-gray-50">
+<div class="grid grid-cols-2 bg-red-600 py-4 px-8 text-gray-50">
   <a href="/">
     <div class="font-semibold text-2xl">Les confitures de Valérie</div>
   </a>
