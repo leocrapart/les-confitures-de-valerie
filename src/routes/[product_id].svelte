@@ -7,6 +7,8 @@
 </script>
 
 <script>
+  import CheckIcon from "../lib/CheckIcon.svelte";
+
   import { data } from "../data";
 
   export let product_id;
@@ -43,11 +45,17 @@
       <div>
         <br />
         <!-- idee v faite maison -->
-        <div>v Artisanale</div>
-        <div>v Faite maison</div>
-        <div>v cuite en bassine de cuivre</div>
-        <div>v {product.fruits} direct producteur</div>
-        <div>v {product.fruits} du Lot et Garonne</div>
+        <div class="flex py-1"><CheckIcon /> Artisanale</div>
+        <div class="flex py-1"><CheckIcon /> Faite maison</div>
+        <div class="flex py-1"><CheckIcon /> Cuite en bassine de cuivre</div>
+        <div class="flex py-1">
+          <CheckIcon />
+          {product.fruits} direct producteur
+        </div>
+        <div class="flex py-1">
+          <CheckIcon />
+          {product.fruits} du Lot et Garonne
+        </div>
         <div>
           <!-- idee camembert  -->
           <br />

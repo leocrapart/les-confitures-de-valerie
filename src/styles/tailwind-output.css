@@ -758,6 +758,10 @@ video {
 	padding-top: 1.25rem;
 	padding-bottom: 1.25rem;
 }
+.py-1 {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
 .pt-2 {
 	padding-top: 0.5rem;
 }
@@ -807,6 +811,10 @@ video {
 .text-gray-50 {
 	--tw-text-opacity: 1;
 	color: rgba(249, 250, 251, var(--tw-text-opacity));
+}
+.text-gray-500 {
+	--tw-text-opacity: 1;
+	color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
 .underline {
 	text-decoration: underline;
