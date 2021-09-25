@@ -5,7 +5,8 @@
 </script>
 
 <div
-  class="rounded-3xl bg-gray-200 flex flex-col justify-center  space-y-5 p-10"
+  class="rounded-3xl bg-gray-200 flex flex-col justify-center  space-y-5 p-5
+         md:p-10"
 >
   <Title />
   <Subtitle />

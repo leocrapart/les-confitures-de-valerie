@@ -85,7 +85,7 @@
     2xl = 100%+
 -->
 
-<div class="p-10 xl:px-20 xl:py-10 ">
+<div class="px-2 py-5 md:p-10 xl:px-20 xl:py-10 ">
   <Banner />
 </div>
 
