@@ -55,26 +55,30 @@
 
       <!-- description -->
       <div>
-        <br />
         <!-- idee v faite maison -->
-        <div class="flex py-1"><CheckIcon /> Artisanale</div>
-        <div class="flex py-1"><CheckIcon /> Faite maison</div>
-        <div class="flex py-1"><CheckIcon /> Cuite en bassine de cuivre</div>
-        <div class="flex py-1">
-          <CheckIcon />
-          {product.fruits} direct producteur
-        </div>
-        <div class="flex py-1">
-          <CheckIcon />
-          {product.fruits} du Lot et Garonne
-        </div>
+        <!-- 
+          <div class="flex py-1"><CheckIcon /> Artisanale</div>
+          <div class="flex py-1"><CheckIcon /> Faite maison</div>
+          <div class="flex py-1"><CheckIcon /> Cuite en bassine de cuivre</div>
+          <div class="flex py-1">
+            <CheckIcon />
+            {product.fruits} direct producteur
+          </div>
+          <div class="flex py-1">
+            <CheckIcon />
+            {product.fruits} du Lot et Garonne
+          </div>
+        -->
         <div>
-          <!-- idee camembert  -->
           <br />
-          <div>350g</div>
-          <div>60% de fruits frais direct producteur</div>
-          <div>40% de sucre, jus de citron, extrait d'arôme de vanille</div>
+          <div class="font-bold">Description</div>
+          {product.description}
+        </div>
+
+        <div>
           <br />
+          <div class="font-bold">Composition</div>
+          {product.composition}
         </div>
       </div>
     </div>

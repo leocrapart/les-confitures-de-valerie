@@ -7,7 +7,9 @@
 
 <a href={url} class="w-52 mx-4 my-4">
   <div class="flex flex-col ">
-    <img class=" rounded-t" src={img_url} alt={"confiture de " + name} />
+    <div class="flex items-end h-52">
+      <img class=" rounded-t" src={img_url} alt={"confiture de " + name} />
+    </div>
 
     <div class="flex justify-between bg-gray-200 rounded-b px-4 py-3 ">
       <div>{name}</div>

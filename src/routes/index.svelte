@@ -53,10 +53,12 @@
     "figue-noire",
     "figue-blanche",
     "figue-vanille",
+    "figue-miel",
   ]);
   const autumnProductsRow1 = getProducts([
     "coing",
     "gelee-coing",
+    "pomme-coing",
     "poire",
     "poire-vanille",
   ]);
@@ -71,6 +73,7 @@
     "gelee-pomme",
     "kiwi",
     "kiwi-vanille",
+    "kiwi-banane",
   ]);
 </script>
 
@@ -95,13 +98,13 @@
          md:px-10 "
 >
   <div class="">
-    <Mosaique products={springProducts} title="Les Fruits du Printemps">
+    <Mosaique products={springProducts} title="Fruits du Printemps">
       <ProductsRow products={springProductsRow1} />
     </Mosaique>
   </div>
 
   <div class="mt-12">
-    <Mosaique products={summerProducts} title="Les Fruits de l'Eté">
+    <Mosaique products={summerProducts} title="Fruits de l'Eté">
       <ProductsRow products={summerProductsRow1} />
       <ProductsRow products={summerProductsRow2} />
       <ProductsRow products={summerProductsRow3} />
@@ -109,14 +112,14 @@
   </div>
 
   <div class="mt-12">
-    <Mosaique products={autumnProducts} title="Les Fruits de l'Automne">
+    <Mosaique products={autumnProducts} title="Fruits de l'Automne">
       <ProductsRow products={autumnProductsRow1} />
       <ProductsRow products={autumnProductsRow2} />
     </Mosaique>
   </div>
 
   <div class="mt-12">
-    <Mosaique products={winterProducts} title="Les Fruits de l'Hiver">
+    <Mosaique products={winterProducts} title="Fruits de l'Hiver">
       <ProductsRow products={winterProductsRow1} />
     </Mosaique>
   </div>
